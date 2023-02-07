@@ -14,7 +14,7 @@ python3 -m pip install -r requirements.txt
 FILE=${DATA_DIR}/efficientdet_lite4.tflite
 if [ ! -f "$FILE" ]; then
   curl \
-    -L 'https://storage.googleapis.com/download.tensorflow.org/models/tflite/task_library/object_detection/rpi/lite-model_efficientdet_lite4_detection_metadata_1.tflite' \
+    -L 'https://storage.googleapis.com/download.tensorflow.org/models/tflite/task_library/object_detection/rpi/lite-model_efficientdet_lite4_detection_metadata_2.tflite' \
     -o ${FILE}
 fi
 
