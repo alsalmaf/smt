@@ -56,7 +56,7 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
   # Initialize the object detection model
   base_options = core.BaseOptions(
       file_name=model, use_coral=enable_edgetpu, num_threads=num_threads)
-  detection_options = processor.DetectionOptions( """new_addition""" label_allow_list = ['bottle'],
+  detection_options = processor.DetectionOptions( label_allow_list = ['bottle'],
       max_results=3, score_threshold=0.3)
   options = vision.ObjectDetectorOptions(
       base_options=base_options, detection_options=detection_options)
